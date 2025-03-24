@@ -1,0 +1,40 @@
+[gd_scene load_steps=4 format=3 uid="uid://cregnaeoanojp"]
+
+[ext_resource type="Texture2D" uid="uid://cn0ag0bje6ixo" path="res://Art/You Died .png" id="1_132i1"]
+[ext_resource type="Script" uid="uid://b3pmaiyqv31wh" path="res://Levels/death_screen.gd" id="1_lmc4j"]
+[ext_resource type="FontFile" uid="uid://bfaglln45ok5w" path="res://Art/minecraft_font.ttf" id="1_suh8j"]
+
+[node name="Death Screen" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_lmc4j")
+
+[node name="Node2D" type="Node2D" parent="."]
+
+[node name="TextureRect" type="TextureRect" parent="Node2D"]
+offset_left = -175.0
+offset_top = -81.0
+offset_right = 1032.0
+offset_bottom = 560.0
+texture = ExtResource("1_132i1")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 345.0
+offset_top = 350.0
+offset_right = 480.0
+offset_bottom = 390.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("1_suh8j")
+text = "Quit to menu"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Quit" to="." method="_on_quit_pressed"]

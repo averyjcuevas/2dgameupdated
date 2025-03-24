@@ -1,0 +1,33 @@
+~ start
+This is a test!
+=> END
+
+~ Arrielle
+Arrielle: Welcome to Windgale General Store! Howdy, sugar! Why, you look like you're 'bout ready to brave the dungeon set in the mountain east here. 
+Here, take some of these to help you on your way and don't worry 'bout the price, [wait=0.5]it's on the house.
+=> END
+
+~ Lochlin
+Lochlin: Welcome to the Town Forge (his house)! Oi! Ya near made me drop ma sword! Oh, ya new here ain'tcha? Gonna challenge the dungeon? 
+'Ere have this, it's bloody dangerous down there without a weapon. I've got plenty to go 'round so don't bother with yer wallet.
+=> END
+
+~ Rundigar
+Rundigar: Welcome to Gale Valley Brewery and Tavern! Just by the look on your face I can tell you're dead set on exploring the Skull Dungeon, but let me tell you nearly everyone in this town has lost someone who's ventured down there. 
+That's why we've had to seal it off. You seem like the type who can handle that kind of danger though so here, this'll get you in there.
+=> END
+
+~ books
+Bookshelf: .....
+Dev: Why did you think the bookshelf could talk...
+=> END
+
+~ intro
+Wooden Sign: Welcome to Windgale, a humble hamlet with a General Store run by Arrielle in the South, a Tavern run by Rundigar in the North, and a home run Forge manned by Lochlin in the South West. 
+Off to the East of town there is a dungeon within which hides riches and danger. Make sure you speak to the locals before heading down. 
+Also do not forget to rest between dungeon rooms to keep your vitality in tip top shape!
+=> END
+
+~ dungeon
+Scary Sign: [wave] [speed=0.5]ABANDON ALL HOPE, YE WHO ENTER HERE
+=> END
